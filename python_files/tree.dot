@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="T3_2023 <= 6.65\ngini = 0.56\nsamples = 75\nvalue = [29, 6, 40]\nclass = Le_Pen_Marine", fillcolor="#e1d0f9"] ;
+1 [label="Pr_Abs_Ins <= 20.599\ngini = 0.34\nsamples = 29\nvalue = [23, 1, 5]\nclass = Emmanuel_Macron", fillcolor="#eca06a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Code_du_département <= 35.5\ngini = 0.469\nsamples = 8\nvalue = [3, 0, 5]\nclass = Le_Pen_Marine", fillcolor="#cdb0f5"] ;
+1 -> 2 ;
+3 [label="gini = 0.375\nsamples = 4\nvalue = [3, 0, 1]\nclass = Emmanuel_Macron", fillcolor="#eeab7b"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 4\nvalue = [0, 0, 4]\nclass = Le_Pen_Marine", fillcolor="#8139e5"] ;
+2 -> 4 ;
+5 [label="tauxpourmille_Coupsetblessuresvolontairesintrafamiliaux <= 3.269\ngini = 0.091\nsamples = 21\nvalue = [20, 1, 0]\nclass = Emmanuel_Macron", fillcolor="#e68743"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 20\nvalue = [20, 0, 0]\nclass = Emmanuel_Macron", fillcolor="#e58139"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = Jean_Luc_Mélenchon", fillcolor="#39e581"] ;
+5 -> 7 ;
+8 [label="densitéh/km² <= 824.5\ngini = 0.392\nsamples = 46\nvalue = [6, 5, 35]\nclass = Le_Pen_Marine", fillcolor="#a46fec"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Partdesemployés <= 27.2\ngini = 0.316\nsamples = 43\nvalue = [6, 2, 35]\nclass = Le_Pen_Marine", fillcolor="#9c64eb"] ;
+8 -> 9 ;
+10 [label="gini = 0.375\nsamples = 4\nvalue = [3, 1, 0]\nclass = Emmanuel_Macron", fillcolor="#eeab7b"] ;
+9 -> 10 ;
+11 [label="gini = 0.188\nsamples = 39\nvalue = [3, 1, 35]\nclass = Le_Pen_Marine", fillcolor="#8f4fe8"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3, 0]\nclass = Jean_Luc_Mélenchon", fillcolor="#39e581"] ;
+8 -> 12 ;
+}
